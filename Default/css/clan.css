@@ -1,0 +1,933 @@
+/* ===== 战队页面样式 ===== */
+
+/* 战队页面头部 */
+.clan-header {
+    padding: 7rem 0 3rem;
+    background: linear-gradient(135deg, #dbeafe 0%, #f8fafc 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.clan-header .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+}
+
+.clan-header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.clan-header p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    position: relative;
+    z-index: 1;
+}
+
+/* 战队内容区域 */
+.clan-section {
+    padding: 2rem 0 4rem;
+    background: var(--bg-light);
+}
+
+/* 我的战队区域 */
+.clan-my-clan-section {
+    margin-bottom: 2rem;
+}
+
+/* 所有战队区域 */
+.clan-all-section {
+    /* 无需特殊样式 */
+}
+
+/* 战队面板 */
+.clan-panel {
+    background: transparent;
+    overflow: hidden;
+}
+
+.clan-panel:hover {
+    box-shadow: none;
+}
+
+.clan-panel-header {
+    padding: 0 0 1rem 0;
+    background: transparent;
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 1.5rem;
+}
+
+.clan-panel-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
+}
+
+.clan-panel-body {
+    padding: 0;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+/* 搜索框 */
+.clan-search {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.clan-search-input {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.9rem;
+    width: 180px;
+    background: var(--bg-white);
+    color: var(--text-dark);
+}
+
+.clan-search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.clan-search-btn {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-white);
+    color: var(--primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clan-search-btn:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* 战队列表 */
+.clan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+/* 战队卡片样式（覆盖rank-card样式） */
+.clan-list .rank-card {
+    cursor: pointer;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    background: var(--bg-white);
+}
+
+.clan-list .rank-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--border-color);
+}
+
+.clan-list .rank-card.rank-gold {
+    background: var(--bg-white);
+    border-color: #ffd700;
+}
+
+/* 加入战队按钮 */
+.clan-join-btn {
+    padding: 0.5rem 0.75rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+}
+
+.clan-join-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* 战队小图标 */
+.clan-icon-small {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+/* 分页 */
+.clan-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.clan-page-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: var(--bg-light);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.clan-page-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.clan-page-info {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* 空状态 */
+.clan-empty {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.clan-empty i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.5;
+}
+
+.clan-empty p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.clan-empty-small {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--text-muted);
+}
+
+.clan-empty-small p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.clan-user-panel .clan-panel-body {
+    max-height: none;
+}
+
+.clan-user-header {
+    border-bottom-color: #f59e0b;
+}
+
+/* 用户战队卡片 */
+.clan-user-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.clan-user-header-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.clan-user-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.75rem;
+}
+
+.clan-user-details {
+    flex: 1;
+}
+
+.clan-user-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 0.25rem 0;
+}
+
+.clan-user-role {
+    margin: 0;
+}
+
+/* 角色标签 */
+.clan-role {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.clan-role-pending {
+    background: linear-gradient(135deg, #6b7280 0%, #9ca3af 100%);
+    color: white;
+}
+
+.clan-role-leader {
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    color: white;
+}
+
+.clan-role-vice-leader {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+    color: white;
+}
+
+.clan-role-secretary {
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    color: white;
+}
+
+.clan-role-member {
+    background: var(--bg-white);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+}
+
+/* 用户战队统计 */
+.clan-user-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-white);
+    border-radius: 10px;
+}
+
+.clan-user-stat {
+    text-align: center;
+}
+
+.clan-user-stat-value {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.clan-user-stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* 用户战队信息 */
+.clan-user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.clan-user-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.clan-user-info-item i {
+    color: var(--primary);
+}
+
+/* 用户战队操作 */
+.clan-user-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.clan-action-btn {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.clan-action-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.clan-action-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+
+/* 没有战队 */
+.clan-no-clan {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.clan-no-clan i {
+    font-size: 3rem;
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+    display: block;
+    opacity: 0.5;
+}
+
+.clan-no-clan p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.clan-no-clan-tip {
+    font-size: 0.85rem;
+    margin-top: 0.5rem !important;
+    opacity: 0.8;
+}
+
+/* 创建战队按钮 */
+.clan-create-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clan-create-btn:hover {
+    background: var(--primary-dark);
+}
+
+.clan-create-btn i {
+    font-size: 0.9rem;
+}
+
+.clan-level-tip {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #f59e0b;
+}
+
+/* 创建战队弹窗 */
+.clan-create-modal {
+    max-width: 420px;
+}
+
+.clan-form-group {
+    margin-bottom: 1.25rem;
+}
+
+.clan-form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.clan-form-group input,
+.clan-form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    background: var(--bg-white);
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+.clan-form-group input:focus,
+.clan-form-group textarea:focus {
+    border-color: var(--primary);
+}
+
+.clan-form-group textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.clan-form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.clan-form-btn {
+    flex: 1;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clan-form-btn-cancel {
+    background: var(--bg-light);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+}
+
+.clan-form-btn-cancel:hover {
+    background: var(--border-color);
+}
+
+.clan-form-btn-submit {
+    background: var(--primary);
+    color: white;
+}
+
+.clan-form-btn-submit:hover {
+    background: var(--primary-dark);
+}
+
+.clan-form-btn-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.clan-create-msg {
+    margin-top: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.clan-msg-success {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.clan-msg-error {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* 登录提示 */
+.clan-login-prompt {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.clan-login-prompt i {
+    font-size: 3rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.clan-login-prompt p {
+    margin: 0 0 1.5rem 0;
+    color: var(--text-muted);
+}
+
+.clan-login-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 2rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.clan-login-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* 战队排行榜 */
+.clan-rank-panel .clan-panel-header {
+    border-bottom-color: #10b981;
+}
+
+.clan-rank-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.clan-rank-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-white);
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.clan-rank-item:hover {
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.clan-rank-badge {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    flex-shrink: 0;
+}
+
+.clan-rank-top {
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    border: none;
+    color: white;
+}
+
+.clan-rank-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.clan-rank-name {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clan-rank-members {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+/* 弹窗 */
+.clan-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.clan-modal.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.clan-modal-content {
+    background: var(--bg-white);
+    border-radius: 16px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+}
+
+.clan-modal.show .clan-modal-content {
+    transform: scale(1);
+}
+
+.clan-modal-header {
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-white);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.clan-modal-header h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
+}
+
+.clan-modal-header h3 i {
+    color: var(--primary);
+}
+
+.clan-modal-close {
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-white);
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.clan-modal-close:hover {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.clan-modal-body {
+    padding: 1.5rem;
+    max-height: calc(80vh - 70px);
+    overflow-y: auto;
+}
+
+/* 加载状态 */
+.clan-loading {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: var(--text-muted);
+}
+
+.clan-loading i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* 错误状态 */
+.clan-error {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #dc2626;
+}
+
+.clan-error i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* 战队成员信息 */
+.clan-members-info {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 10px;
+}
+
+.clan-members-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.clan-members-stat i {
+    color: var(--primary);
+}
+
+/* 战队成员表格 */
+.clan-members-table {
+    overflow-x: auto;
+}
+
+.clan-members-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clan-members-table th,
+.clan-members-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.clan-members-table th {
+    background: var(--bg-light);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.clan-members-table td {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.clan-members-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.clan-members-table tbody tr:hover {
+    background: rgba(37, 99, 235, 0.03);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .clan-header {
+        padding: 4rem 0 2rem;
+    }
+
+    .clan-header h1 {
+        font-size: 2rem;
+    }
+
+    .clan-panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .clan-search {
+        width: 100%;
+    }
+
+    .clan-search-input {
+        flex: 1;
+        width: auto;
+    }
+
+    .clan-user-stats {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .clan-user-stat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .clan-user-stat-value {
+        font-size: 1.25rem;
+    }
+
+    .clan-modal-content {
+        width: 95%;
+        max-height: 90vh;
+    }
+}
+
+/* 暗色主题适配 */
+[data-bs-theme="dark"] .clan-header {
+    background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .clan-card {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .clan-user-card {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .clan-user-stats {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .clan-rank-item {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .clan-rank-item:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-bs-theme="dark"] .clan-members-info {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .clan-members-table th {
+    background: var(--bg-white);
+}

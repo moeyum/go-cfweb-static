@@ -1,0 +1,454 @@
+#firstnav {
+    height: 50px;
+    border-bottom: 1px solid transparent;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    position: relative;
+}
+
+#firstnav .nav-addtabs {
+    z-index: 98;
+    height: 100%;
+    border: none;
+}
+
+#firstnav .navbar-custom-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background: transparent;
+}
+
+.nav-addtabs > li .close-tab {
+    font-size: 10px;
+    position: absolute;
+    right: 3px;
+    top: 53%;
+    margin-top: -8px;
+    z-index: 100;
+    cursor: pointer;
+    color: #909090;
+    display: none;
+}
+
+.nav-addtabs > li.active > a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    border-radius: 0;
+    border: none;
+    background: #f1f4f6;
+    color: #2c3e50;
+    overflow: hidden;
+}
+
+.skin-black .nav-addtabs > li.active > a, .skin-black .nav-addtabs > li > a {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.skin-black .main-header .navbar .nav > li > a:hover, .skin-black .main-header .navbar .nav > li > a:active, .skin-black .main-header .navbar .nav > li > a:focus, .skin-black .main-header .navbar .nav .open > a, .skin-black .main-header .navbar .nav .open > a:hover, .skin-black .main-header .navbar .nav .open > a:focus, .skin-black .main-header .navbar .nav > .active > a {
+    background-color: #f7f7f7 !important;
+}
+
+.nav-addtabs > li > a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    color: #95a5a6;
+}
+
+.content-header > .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+
+.breadcrumb > li {
+    display: inline-block;
+}
+
+.content-header > .breadcrumb > li > a {
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar-static-top .nav-tabs > li.active > a, navbar-static-top .nav-tabs > li.active > a:focus, navbar-static-top .nav-tabs > li.active > a:hover {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: none !important;
+    border-bottom-color: transparent;
+}
+
+.form-group > label.asterisk:before {
+    content: " *";
+    color: red;
+}
+
+.form-horizontal .nav-tabs-custom {
+    box-shadow: none;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    vertical-align: middle;
+}
+
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+/* 修复侧边栏下拉展开后底部黑色长条问题 */
+.main-sidebar,
+.main-sidebar .sidebar {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.sidebar-menu {
+    overflow: visible !important;
+}
+
+/* 确保treeview-menu展开时正确显示 */
+.treeview-menu {
+    display: none;
+}
+
+.treeview.active > .treeview-menu {
+    display: block;
+}
+
+/* 修复wrapper高度问题 */
+.wrapper {
+    min-height: 100vh !important;
+    height: auto !important;
+}
+
+/* 确保content-wrapper正确填充 */
+.content-wrapper {
+    min-height: 100vh !important;
+}
+
+/* 增强修复：确保侧边栏背景色覆盖到底部 */
+.main-sidebar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100% !important;
+    min-height: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    z-index: 800;
+}
+
+/* 确保侧边栏内容区域可以滚动 */
+.main-sidebar .sidebar {
+    height: 100% !important;
+    min-height: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+/* 确保主内容区域正确偏移 */
+.content-wrapper,
+.main-footer {
+    margin-left: 230px;
+}
+
+/* 侧边栏收起时的偏移 */
+.sidebar-mini.sidebar-collapse .content-wrapper,
+.sidebar-mini.sidebar-collapse .main-footer {
+    margin-left: 50px;
+}
+
+/* 确保body和html高度正确 */
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+/* 移除可能导致黑条的伪元素 */
+.wrapper::before,
+.wrapper::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* 修复进度条样式 */
+.progress {
+    height: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.progress-bar-success {
+    background-color: #5cb85c;
+}
+
+.progress-bar-info {
+    background-color: #5bc0de;
+}
+
+.progress-bar-warning {
+    background-color: #f0ad4e;
+}
+
+.progress-bar-danger {
+    background-color: #d9534f;
+}
+
+.progress-bar-primary {
+    background-color: #337ab7;
+}
+
+/* 表格内的进度条 */
+.table .progress {
+    margin-bottom: 0;
+    height: 18px;
+}
+
+.table .progress-bar {
+    line-height: 18px;
+    font-size: 11px;
+}
+
+/* 隐藏导航栏顶部的NProgress加载进度条 */
+#nprogress {
+    display: none !important;
+}
+
+.nprogress-busy .nprogress-custom-parent {
+    display: none !important;
+}
+
+/* 隐藏侧边栏滚动条 */
+.main-sidebar,
+.sidebar,
+.sidebar-wrapper,
+.sidebar-menu {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+.main-sidebar::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.sidebar-wrapper::-webkit-scrollbar,
+.sidebar-menu::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* Header固定悬浮 */
+.main-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1030 !important;
+    width: 100% !important;
+}
+
+/* 内容区域上边距，避免被header遮挡 - 仅桌面端 */
+@media (min-width: 768px) {
+    .content-wrapper,
+    .main-footer {
+        margin-top: 50px !important;
+    }
+}
+
+/* 手机端适配 */
+@media (max-width: 767px) {
+    .content-wrapper,
+    .main-footer {
+        margin-top: 50px !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .main-sidebar {
+        position: fixed !important;
+        left: -230px !important;
+        transition: left 0.3s ease !important;
+    }
+
+    .main-sidebar.sidebar-open {
+        left: 0 !important;
+    }
+
+    /* 手机端导航栏修复 */
+    .main-header {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 1030 !important;
+        background: #3c8dbc !important;
+        min-height: 50px !important;
+        box-shadow: 0 0 5px rgba(18,23,39,.5) !important;
+    }
+
+    .main-header .navbar {
+        width: 100% !important;
+        margin-left: 0 !important;
+        min-height: 50px !important;
+        background: #3c8dbc !important;
+    }
+
+    .main-header .logo {
+        width: auto !important;
+        float: left !important;
+        height: 50px !important;
+        display: block !important;
+        padding: 10px 15px !important;
+        background: #367fa9 !important;
+    }
+
+    .main-header .logo-mini,
+    .main-header .logo-lg {
+        display: inline-block !important;
+        color: #fff !important;
+        font-size: 18px !important;
+        font-weight: bold !important;
+    }
+
+    .sidebar-toggle {
+        display: block !important;
+        color: #fff !important;
+        float: left !important;
+        padding: 15px !important;
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        z-index: 10 !important;
+    }
+
+    .navbar-custom-menu {
+        float: right !important;
+        display: block !important;
+        margin-right: 10px !important;
+    }
+
+    .navbar-custom-menu .nav {
+        display: block !important;
+    }
+
+    .navbar-custom-menu .user-menu {
+        display: block !important;
+    }
+
+    .navbar-custom-menu .user-menu > a {
+        color: #fff !important;
+        padding: 15px !important;
+        display: block !important;
+    }
+
+    .navbar-custom-menu .user-image {
+        width: 25px !important;
+        height: 25px !important;
+        border-radius: 50% !important;
+    }
+
+    /* 确保导航栏内容可见 */
+    .main-header .navbar-static-top {
+        background: #3c8dbc !important;
+    }
+
+    .nav.navbar-nav {
+        display: block !important;
+        float: right !important;
+    }
+
+    .nav.navbar-nav > li {
+        display: inline-block !important;
+        float: left !important;
+    }
+
+    /* 手机端sidebar展开状态 */
+    body.sidebar-open .main-sidebar {
+        left: 0 !important;
+    }
+
+    /* 确保sidebar内容可见 */
+    .sidebar-menu {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .sidebar-menu > li {
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .sidebar-menu > li > a {
+        display: block !important;
+        visibility: visible !important;
+        padding: 12px 15px !important;
+    }
+}
+
+/* 修复skin-blue背景色问题 - 只让侧边栏有深色背景 */
+.skin-blue .wrapper {
+    background-color: #ecf0f5 !important;
+}
+
+.skin-blue .main-sidebar,
+.skin-blue .left-side {
+    background-color: #222d32 !important;
+}
+
+/* 确保内容区域是浅色背景 */
+.skin-blue .content-wrapper {
+    background-color: #ecf0f5 !important;
+}
+
+@keyframes pageFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+body.hold-transition {
+    animation: pageFadeIn 0.15s ease-in;
+}

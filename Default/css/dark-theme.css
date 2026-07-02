@@ -1,0 +1,1350 @@
+/* ===== 暗色主题特定样式 ===== */
+
+/* 导航栏 */
+[data-bs-theme="dark"] .navbar {
+    background: var(--bg-white) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero区域 */
+[data-bs-theme="dark"] .hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .hero::before {
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+}
+
+/* 页面头部 */
+[data-bs-theme="dark"] .page-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .page-header h1 {
+    color: #60a5fa;
+}
+
+[data-bs-theme="dark"] .page-header p {
+    color: #cbd5e1;
+}
+
+/* 卡片 */
+[data-bs-theme="dark"] .project-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .project-card:hover {
+    box-shadow: 0 25px 50px rgba(59, 130, 246, 0.3);
+}
+
+[data-bs-theme="dark"] .team-card {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .team-card:hover {
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.25);
+}
+
+[data-bs-theme="dark"] .service-item {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .service-item:hover {
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.25);
+}
+
+[data-bs-theme="dark"] .news-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-row-link:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* 表格 */
+[data-bs-theme="dark"] .leaderboard-table table,
+[data-bs-theme="dark"] .violations-table table {
+    background: var(--bg-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .leaderboard-table tbody tr:hover,
+[data-bs-theme="dark"] .violations-table tbody tr:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+/* 用户下拉菜单 */
+[data-bs-theme="dark"] .user-dropdown {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-bs-theme="dark"] .dropdown-item:hover {
+    background: rgba(59, 130, 246, 0.15);
+}
+
+/* 语言切换器 */
+[data-bs-theme="dark"] .lang-dropdown {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .lang-option:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-bs-theme="dark"] .lang-option.active {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+/* 页脚 */
+[data-bs-theme="dark"] footer {
+    background: #0f172a;
+}
+
+/* 网格背景 */
+[data-bs-theme="dark"] .grid-bg {
+    background-image:
+        linear-gradient(rgba(59, 130, 246, 0.25) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.25) 1px, transparent 1px);
+}
+
+/* 动画方块 */
+[data-bs-theme="dark"] .square-box {
+    background: rgba(30, 41, 59, 0.6);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* 各个section */
+[data-bs-theme="dark"] .about-section,
+[data-bs-theme="dark"] .team-section,
+[data-bs-theme="dark"] .contact-section {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .projects-section,
+[data-bs-theme="dark"] .services-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] #violations {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+/* 联系方式 */
+[data-bs-theme="dark"] .contact-box {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+}
+
+[data-bs-theme="dark"] .contact-method {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-bs-theme="dark"] .contact-method:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+[data-bs-theme="dark"] .contact-link {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .contact-link:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+/* 认证页面 */
+[data-bs-theme="dark"] .auth-page {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 50%, #1e293b 100%);
+}
+
+[data-bs-theme="dark"] .auth-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] .auth-logo h2 {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .auth-logo p {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .auth-footer {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .auth-footer a {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .form-submit {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+}
+
+[data-bs-theme="dark"] .form-submit:hover {
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.6);
+}
+
+[data-bs-theme="dark"] .send-code-btn {
+    background: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .send-code-btn:hover {
+    background: var(--primary-dark);
+}
+
+[data-bs-theme="dark"] .send-code-btn:disabled {
+    background: var(--border-color);
+    color: var(--text-muted);
+}
+
+/* 订单页面 */
+[data-bs-theme="dark"] .order-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .order-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+}
+
+[data-bs-theme="dark"] .order-card {
+    background: var(--bg-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .user-panel {
+    background: var(--bg-white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .balance-item {
+    background: var(--bg-light);
+}
+
+/* 模态框 */
+[data-bs-theme="dark"] .modal-box {
+    background: var(--bg-white);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* 消息提示 */
+[data-bs-theme="dark"] .msg-success {
+    background: rgba(22, 163, 74, 0.2);
+    color: #4ade80;
+}
+
+[data-bs-theme="dark"] .msg-error {
+    background: rgba(220, 38, 38, 0.2);
+    color: #f87171;
+}
+
+/* 表单输入框 */
+[data-bs-theme="dark"] .form-input {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .form-input:focus {
+    background: var(--bg-white);
+    border-color: var(--primary);
+}
+
+/* 验证码触发器 */
+[data-bs-theme="dark"] .captcha-trigger {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .captcha-trigger:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+/* ===== 页面头部区域 ===== */
+[data-bs-theme="dark"] .rank-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .activity-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .uc-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .news-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .shop-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .download-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+/* ===== 导航栏增强 ===== */
+[data-bs-theme="dark"] .navbar-light {
+    background: var(--bg-white) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(241, 245, 249, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ===== 排行榜页面 ===== */
+[data-bs-theme="dark"] .rank-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .rank-tabs {
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .tab-btn {
+    background: transparent;
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .tab-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .tab-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .rank-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .rank-card:hover {
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .rank-gold {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(37, 99, 235, 0.05) 100%);
+}
+
+/* ===== 活动页面 ===== */
+[data-bs-theme="dark"] .activity-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .activity-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .activity-card:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .activity-content {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .activity-status {
+    opacity: 1;
+}
+
+[data-bs-theme="dark"] .activity-empty {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+/* ===== 新闻页面 ===== */
+[data-bs-theme="dark"] .news-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .news-grid {
+    background: transparent;
+}
+
+/* ===== 商城页面 ===== */
+[data-bs-theme="dark"] .shop-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .shop-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .shop-card:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary);
+}
+
+/* ===== 用户中心 ===== */
+[data-bs-theme="dark"] .uc-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .uc-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .uc-menu {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .uc-menu-item {
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .uc-menu-item:hover,
+[data-bs-theme="dark"] .uc-menu-item.active {
+    background: rgba(59, 130, 246, 0.1);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* ===== 下载页面 ===== */
+[data-bs-theme="dark"] .download-section {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .download-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .download-card:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary);
+}
+
+/* ===== 首页特定section ===== */
+[data-bs-theme="dark"] .carousel-news-section,
+[data-bs-theme="dark"] .features-section,
+[data-bs-theme="dark"] .rank-preview-section,
+[data-bs-theme="dark"] .stats-section {
+    background: var(--bg-white);
+}
+
+[data-bs-theme="dark"] .carousel-item {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .feature-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .feature-card:hover {
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    border-color: var(--primary);
+}
+
+/* ===== 通用卡片和按钮 ===== */
+[data-bs-theme="dark"] .card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .btn-outline-primary:hover {
+    background: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .btn-secondary {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .btn-secondary:hover {
+    background: var(--border-color);
+    color: var(--text-dark);
+}
+
+/* ===== 新闻页面面板 ===== */
+[data-bs-theme="dark"] .news-page-panel {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-page-filters {
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-page-filter {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-filter:hover {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-page-filter.active {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-page-filter.active::after {
+    background: var(--primary);
+}
+
+/* ===== 商城工具栏 ===== */
+[data-bs-theme="dark"] .shop-toolbar,
+[data-bs-theme="dark"] .shop-board {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-toolbar-row {
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-toolbar-label {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .shop-toolbar-link {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .shop-toolbar-link:hover,
+[data-bs-theme="dark"] .shop-toolbar-link.active {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-cart-link {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .shop-cart-link:hover {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-cart-count {
+    background: var(--primary);
+    color: white;
+}
+
+/* ===== 商城看板 ===== */
+[data-bs-theme="dark"] .shop-board {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-item {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-item:hover {
+    border-color: var(--primary);
+    box-shadow: 0 4px 16px rgba(59, 130, 246, 0.3);
+}
+
+[data-bs-theme="dark"] .shop-item-name {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .shop-item-price {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-item-desc {
+    color: var(--text-muted);
+}
+
+/* ===== 新闻详情页面 ===== */
+[data-bs-theme="dark"] .news-detail-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .news-detail-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-detail-breadcrumb {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-detail-breadcrumb a {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-detail-breadcrumb a:hover {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-breadcrumb .current {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-heading {
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-detail-title {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-time {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-detail-content {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .news-detail-content p {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .news-detail-content a {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-content a:hover {
+    color: var(--primary-light);
+}
+
+[data-bs-theme="dark"] .news-detail-content table {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-detail-content th,
+[data-bs-theme="dark"] .news-detail-content td {
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .news-detail-content pre {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-detail-content code {
+    background: var(--bg-light);
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-footer {
+    border-top-color: var(--border-color);
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-detail-footer a {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-detail-footer a:hover {
+    color: var(--primary-light);
+}
+
+/* ===== 商城详情页面 ===== */
+[data-bs-theme="dark"] .shop-detail-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .shop-detail-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .shop-gallery-main {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-gallery-main-empty {
+    background: var(--bg-light);
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .shop-gallery-thumb {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .shop-gallery-thumb.active {
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-detail-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .shop-detail-price {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-detail-price strong {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-detail-meta {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .shop-detail-label {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .shop-detail-option {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .shop-detail-option:hover {
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .shop-detail-option.active {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .shop-detail-desc {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .shop-detail-btn {
+    background: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .shop-detail-btn:hover {
+    background: var(--primary-dark);
+}
+
+/* ===== 订单页面 ===== */
+[data-bs-theme="dark"] .order-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .order-shell {
+    background: transparent;
+}
+
+[data-bs-theme="dark"] .order-card {
+    background: var(--bg-white);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .order-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-error {
+    background: rgba(220, 38, 38, 0.1);
+    color: #f87171;
+    border-color: rgba(220, 38, 38, 0.3);
+}
+
+[data-bs-theme="dark"] .order-empty {
+    background: var(--bg-light);
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-table {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-table thead {
+    background: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .order-table th {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .order-table td {
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-table tbody tr:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+[data-bs-theme="dark"] .order-product-name {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-product-spec {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-total-strong {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .order-summary {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-coupon {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-pay-box {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-pay-line {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-pay-line span {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-pay-line strong {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-pay-total {
+    border-top-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-pay-total strong {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .order-btn {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-btn:hover {
+    background: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-btn.primary {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .order-btn.primary:hover {
+    background: var(--primary-dark);
+}
+
+/* ===== 订单成功页面 ===== */
+[data-bs-theme="dark"] .order-success-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .order-success-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .order-success-icon {
+    background: var(--primary);
+    color: white;
+}
+
+[data-bs-theme="dark"] .order-success-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-success-info {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-success-detail {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-success-detail-label {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-success-detail-value {
+    color: var(--text-dark);
+}
+
+/* ===== 订单成功页面（实际使用的类名） ===== */
+[data-bs-theme="dark"] .success-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .success-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .success-status {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .success-status-title {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .success-tip {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .success-box {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .success-box-header {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .success-meta {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .success-meta div {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .success-table {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .success-table thead {
+    background: var(--primary);
+}
+
+[data-bs-theme="dark"] .success-table th {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .success-table td {
+    border-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .success-table tbody tr:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+[data-bs-theme="dark"] .success-actions {
+    border-top-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .success-btn {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .success-btn:hover {
+    background: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .success-btn.primary {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .success-btn.primary:hover {
+    background: var(--primary-dark);
+}
+
+/* ===== 转盘活动页面 ===== */
+[data-bs-theme="dark"] .wheel-header {
+    background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+}
+
+[data-bs-theme="dark"] .wheel-header h1 {
+    color: #60a5fa;
+}
+
+[data-bs-theme="dark"] .wheel-header p {
+    color: #cbd5e1;
+}
+
+[data-bs-theme="dark"] .wheel-section {
+    background: var(--bg-light);
+}
+
+/* 用户状态卡片 */
+[data-bs-theme="dark"] .user-status-card {
+    background: transparent;
+}
+
+[data-bs-theme="dark"] .status-item {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .status-label {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .status-value {
+    color: var(--text-dark);
+}
+
+/* 购买按钮 */
+[data-bs-theme="dark"] .purchase-mini-btn {
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+}
+
+[data-bs-theme="dark"] .purchase-mini-btn:hover {
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.6);
+}
+
+/* 抽奖盒子 */
+[data-bs-theme="dark"] .lottery-box {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 抽奖格子 */
+[data-bs-theme="dark"] .lottery-item {
+    background: linear-gradient(135deg, var(--bg-light) 0%, var(--border-color) 100%);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .lottery-item .item-name {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .lottery-item.rare {
+    border-color: #fbbf24;
+    background: linear-gradient(135deg, #422006 0%, #78350f 100%);
+    box-shadow: 0 0 10px rgba(251, 191, 36, 0.6);
+}
+
+[data-bs-theme="dark"] .lottery-item.rare .item-icon {
+    color: #fbbf24;
+}
+
+[data-bs-theme="dark"] .lottery-item.rare .item-name {
+    color: #fcd34d;
+}
+
+/* 抽奖滚动动画高亮 - 暗夜模式 */
+[data-bs-theme="dark"] .lottery-item.rolling-active {
+    border: 3px solid #60a5fa !important;
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%) !important;
+    box-shadow: 0 0 20px rgba(96, 165, 250, 0.8), 0 0 40px rgba(96, 165, 250, 0.4) !important;
+}
+
+[data-bs-theme="dark"] .lottery-item.rolling-active .item-icon {
+    color: #60a5fa;
+}
+
+/* 抽奖按钮 */
+[data-bs-theme="dark"] .lottery-btn {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+[data-bs-theme="dark"] .lottery-btn:hover {
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.6);
+}
+
+[data-bs-theme="dark"] .lottery-btn-ten {
+    background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.4);
+}
+
+[data-bs-theme="dark"] .lottery-btn-ten:hover {
+    box-shadow: 0 6px 16px rgba(245, 158, 11, 0.6);
+}
+
+/* 中奖滚动展示 */
+[data-bs-theme="dark"] .winner-scroll-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .winner-scroll-header {
+    color: var(--text-dark);
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .winner-name {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .winner-prize {
+    color: #fbbf24;
+}
+
+/* 暂存箱 */
+[data-bs-theme="dark"] .storage-section {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .storage-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .storage-count {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .storage-action-btn {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .storage-action-btn:hover {
+    background: var(--border-color);
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .storage-action-btn.primary {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .storage-action-btn.danger {
+    background: #dc2626;
+    color: white;
+    border-color: #dc2626;
+}
+
+[data-bs-theme="dark"] .storage-item {
+    background: var(--bg-light);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .storage-item:hover {
+    border-color: var(--primary);
+}
+
+[data-bs-theme="dark"] .storage-item.selected {
+    border-color: var(--primary);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+[data-bs-theme="dark"] .storage-item-name {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .storage-item-time {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .storage-empty {
+    color: var(--text-muted);
+}
+
+/* 活动说明 */
+[data-bs-theme="dark"] .wheel-tips {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .wheel-tips h4 {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .wheel-tips li {
+    color: var(--text-muted);
+}
+
+/* 模态框 */
+[data-bs-theme="dark"] .modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+[data-bs-theme="dark"] .modal-content,
+[data-bs-theme="dark"] .modal-box {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+[data-bs-theme="dark"] .modal-title,
+[data-bs-theme="dark"] .modal-box h3 {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .modal-prize,
+[data-bs-theme="dark"] .modal-box p {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .modal-btn {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .modal-btn:hover {
+    background: var(--border-color);
+}
+
+[data-bs-theme="dark"] .modal-btn.secondary {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+/* ===== 新闻页面补充样式 ===== */
+[data-bs-theme="dark"] .news-page-row {
+    border-bottom-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .news-page-row-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .news-page-row:hover .news-page-row-title {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-page-row-date {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-tag {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-empty {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-breadcrumb {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-breadcrumb a {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .news-page-breadcrumb a:hover {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-page-breadcrumb .current {
+    color: var(--primary);
+}
+
+[data-bs-theme="dark"] .news-page-result {
+    color: var(--text-muted);
+}
+
+/* ===== 订单日志页面 ===== */
+[data-bs-theme="dark"] .order-log-page {
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] .order-log-card {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .order-log-title {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-log-item {
+    background: var(--bg-white);
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-log-item-header {
+    background: var(--bg-light);
+    border-bottom-color: var(--border-color);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-log-grid {
+    color: var(--text-muted);
+}
+
+[data-bs-theme="dark"] .order-log-table {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-log-table th,
+[data-bs-theme="dark"] .order-log-table td {
+    border-color: var(--border-color);
+}
+
+[data-bs-theme="dark"] .order-log-table th {
+    background: var(--bg-light);
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-log-table td {
+    color: var(--text-dark);
+}
+
+[data-bs-theme="dark"] .order-log-table tbody tr:hover {
+    background: rgba(59, 130, 246, 0.05);
+}
+
+[data-bs-theme="dark"] .order-log-empty {
+    color: var(--text-muted);
+    border-color: var(--border-color);
+    background: var(--bg-white);
+}
